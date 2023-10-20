@@ -4,16 +4,8 @@ using namespace std;
 int main()
 {
 
-    int a,b;
-    cout<<"enter a: "<< endl;
-    cin>> a;
-    cout<< endl;
-
-    cout<<"Enter b: "<< endl;
-    cin>> b;
-    cout<< endl;
-
-    cout<<"The sum of a and b is = "<< a +b << endl;
+    cout<<"Hello World"<< endl;
+    cout<<"My name is Saksham Verma"<< endl;
  
    return 0;
  
