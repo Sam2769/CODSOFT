@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-red {
+  background-color: red;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  height: 67px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar li {
+  list-style: none;
+  margin: 0 12px 12px;
+}
+
+.font-bold {
+  font-weight: bolder;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.my-1 {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.px-2 {
+  padding-top: 13px;
+  padding-right: 13px;
+}
+
+.text-blue {
+  color: #ff0400;
+}
+
+.btn {
+  padding: 7px 12px;
+  border: 2px solid rgb(219, 226, 224);
+  color: white;
+  background-color: rgb(231, 126, 7);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.dumbell_img {
+  width: 283px;
+}
+
+.text-center {
+  text-align: center;
+}

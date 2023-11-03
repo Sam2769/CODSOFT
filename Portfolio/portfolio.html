@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* NAV BAR STYLING */
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(28, 129, 218);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      .left {
+        font-size: 2rem;
+      }
+
+      .firstSection div {
+        width: 30%;
+        margin: 7%;
+        padding: 23px;
+      }
+
+      /* FIRST SECTION CSS */
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0;
+      }
+
+      .leftSection {
+        font-size: 1.5rem;
+      }
+
+      .rightSection {
+        background-color: rgb(106, 0, 255);
+      }
+
+      .rightSection ul li {
+        font-size: 22px;
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: 4%;
+        height: 80vh;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 150px;
+      }
+
+      .vertical-title {
+        position: relative;
+        width: 150px;
+        min-width: 100px;
+
+        top: 75px;
+        font-weight: bolder;
+        font-size: 22px;
+        text-decoration: underline;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: grey;
+        width: 150px;
+        font-size: 20px;
+        min-width: 250px;
+      }
+
+      .image-top {
+        width: 30px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+
+      .thirdSection {
+        margin-top: 25%;
+      }
+
+  
+    
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="\Portfolio\Mylogo.png" alt="logo" width="150px" />
+
+        <div class="left">Saksham's Portfolio</div>
+        <div class="right"></div>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- FIRST SECTION CODE -->
+      <section class="firstSection">
+        <div class="leftSection">
+          Greetings!! . My name is Saksham Verma and I am a Virtual Intern at
+          <b><b>CodSoft.</b></b
+          ><br /><br />I Hail from Paschim Vihar, West Delhi, where i did my
+          schooling from Shah International School. I am currently pursuing
+          BTech in Computer Science from Roorkee Institute Of Technology,
+          Roorkee.<br /><br />
+          I have built this Portfolio Website and learned a lot of concepts
+          about HTML and CSS like: Flexbox, Margins, Paddings, Section Tag, Div
+          Tag etc.
+        </div>
+
+        <div class="rightSection">
+          <big>
+            <h1><u>About Me:</u></h1></big
+          >
+
+          <br />
+
+          <ul>
+            <li>
+              2nd year BTech CSE Student at Roorkee Institute of Technology.
+            </li>
+            <br />
+            <li>Passionate about Programming and Web Development.</li>
+            <br />
+
+            <li>2 Years of Experience in Python and SQL.</li>
+            <br /><br />
+
+            <h2>Some of my Interests are:</h2>
+
+            <li>Love to listen to Podcasts</li>
+            <br /><br />
+            <li>Love to study and know more about Spirituality.</li>
+            <br /><br />
+            <li>Attracted to the Uniform of Armed Forces.</li>
+            <br /><br />
+            <li>Love to Read Thriller Novels.</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr />
+      <br />
+<!-- SECOND SECTION CODE -->
+      <section class="secondSection">
+        <u><h1>Work Experience</h1></u><br /><br /><br />
+
+        <div class="box">
+          <div class="vertical">
+            <img src="python_logo.png" class="image-top" alt="Python Logo" />
+
+            <div class="vertical-title">Python Programmer</div>
+
+            <div class="vertical-desc">
+              <p>
+                I have been coding in Python since class 11th and am familiar
+                with the basics of this Language.
+                <br />
+                I have the knowledge of basic concepts like OOPS, Dictionaries,
+                Lists, Recursion, Sorting etc.
+              </p>
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img src="sql_logo.png" alt="SQL_LOGO" class="image-top" />
+
+            <div class="vertical-title">Structured Query Language</div>
+
+            <div class="vertical-desc">
+              <p>
+                Again, when it comes to SQL, it was also included in my 11th and
+                12th class syllabus. I have experience in creating, updating,
+                deleting, merging and unmerging tables in SQL. I have also made
+                basi projects like Hospital Mangement System(basic one) ,
+                Calculator, Time Table(basic one) using Python-SQL Connectivity.
+              </p>
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img src="html5_logo.png" alt="" class="image-top" />
+            <div class="vertical-title">HTML Programmer</div>
+
+            <div class="vertical-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                perspiciatis aliquid aspernatur molestiae enim, est officia in,
+                rerum, quaerat ullam eos omnis. Qui libero natus, laborum
+                excepturi neque sed tenetur?
+              </p>
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img src="c_logo.png" alt="" class="image-top" />
+
+            <div class="vertical-title">C Language Programmer</div>
+
+            <div class="vertical-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                perspiciatis aliquid aspernatur molestiae enim, est officia in,
+                rerum, quaerat ullam eos omnis. Qui libero natus, laborum
+                excepturi neque sed tenetur?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- THIRD SECTION CODE -->
+
+      <section class="thirdSection">
+        <div class="projects">
+          <big><u><h1>Projects</h1></u></big>
+
+          <div class="calculator">
+            <h3>1.Calculator</h3>
+          </div>
+
+          
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
