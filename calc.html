@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>CALCULATOR</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background:linear-gradient(45deg,rgba(227, 24, 24, 0.867),rgb(196, 19, 19));
+}
+body{
+    width:100%;
+    height:100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(45deg,rgb(223, 18, 151),rgb(13, 58, 182)) ;
+
+}
+.calci{
+    border:1px solid rgb(0, 0, 0);
+    padding: 2px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.447);
+}
+input{
+    color:white;
+    width: 400px;
+    border:2px solid rgb(255, 255, 255);
+    padding:25px;
+    margin:10px;
+    background:transparent;
+    box-shadow: 0px 3px 15px rgba(85,85,85 0.1);
+    font-size: 45px;
+    text-align:right;
+    cursor:pointer;
+}
+button{
+    border:1px solid white;
+    width:80px;
+    height:80px;
+    margin:10px;
+    border-radius: 50%;
+    background:transparent;
+    color:white;
+    font-size: 25px;
+    cursor:pointer;
+}
+.ac{
+    background-color: rgb(255, 255, 255);
+    color:rgb(95, 13, 13);
+}
+.operator{
+    color:rgb(0, 255, 0);
+}
+.op{
+    color:red;
+}
+.ope{
+    background-color:orangered;
+}
+</style>
+</head>
+<body>
+    <div class="calci">
+    <input type="text" class="input" placeholder="0" id="inputbox">
+    <div>
+        <button class="ac">AC</button>
+        <button class="op">DEL</button>
+        <button class="operator">%</button>
+        <button class="operator">/</button>
+    </div>
+    <div>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">*</button>
+    </div>
+    <div>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">+</button>
+    </div>
+    <div>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">-</button>
+    </div>
+    <div>
+        <button>00</button>
+        <button>0</button>
+        <button>.</button>
+        <button class="ope">=</button>
+    </div>
+<script>
+let input= document.getElementById('inputbox');
+let buttons= document.querySelectorAll('button');
+let string = "";
+let arr = Array.from(buttons);
+arr.forEach(button => {
+    button.addEventListener('click', (e) =>{
+    if(e.target.innerHTML == '='){
+            string = eval(string);
+            input.value = string;
+        }
+
+        else if(e.target.innerHTML == 'AC'){
+            string = "";
+            input.value = string;
+        }
+     else if(e.target.innerHTML == 'DEL'){
+            string = string.substring(0, string.length-1);
+            input.value = string;
+        }
+    else{
+            string += e.target.innerHTML;
+            input.value = string;
+        }
+        
+    })
+})
+</script>
+</body>
+</html>

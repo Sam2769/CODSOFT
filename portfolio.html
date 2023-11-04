@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saksham's Portfolio</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* NAV BAR STYLING */
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      background-color: rgb(28, 129, 218);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    .left {
+      font-size: 2rem;
+    }
+
+    .firstSection div {
+      width: 30%;
+      margin: 7%;
+      padding: 23px;
+    }
+
+    /* FIRST SECTION CSS */
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 23px 0;
+    }
+
+    .leftSection {
+      font-size: 1.5rem;
+    }
+
+    .rightSection {
+      background-color: rgb(106, 0, 255);
+    }
+
+    .rightSection ul li {
+      font-size: 22px;
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: 4%;
+      height: 80vh;
+    }
+
+    .secondSection h1 {
+      font-size: 1.9rem;
+    }
+
+    .secondSection .box {
+      background: white;
+      width: 80vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
+
+    .secondSection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 150px;
+    }
+
+    .vertical-title {
+      position: relative;
+      width: 150px;
+      min-width: 100px;
+
+      top: 75px;
+      font-weight: bolder;
+      font-size: 22px;
+      text-decoration: underline;
+    }
+
+    .vertical-desc {
+      position: relative;
+      top: 86px;
+      color: grey;
+      width: 150px;
+      font-size: 20px;
+      min-width: 250px;
+    }
+
+    .image-top {
+      width: 30px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+
+    .thirdSection {
+      margin-top: 25%;
+    }
+
+    .thirdSection h1 {
+
+      font-size: 40px;
+    }
+
+    .thirdSection h3 {
+
+      font-size: 29px;
+      padding-bottom: 2%;
+    }
+
+    .calculator {
+
+      margin-top: 8%;
+    }
+
+    .LandingPage {
+
+      margin-top: 9%;
+    }
+
+    .calc_image {
+
+      display: flex;
+      margin-top: 15%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calc_button {
+
+      display: flex;
+
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      margin-left: 21%;
+      margin-top: 5%;
+      border-radius: 25px;
+      padding: 15px;
+      cursor: pointer;
+
+    }
+
+    .calc_button a {
+
+      background-color: aquamarine;
+    }
+
+    .landing_image {
+
+      margin-left: 40%;
+      border-radius: 15px;
+      margin-top: 10%;
+
+    }
+
+    .LandingButton {
+
+      display: flex;
+      justify-content: right;
+
+      font-size: 23px;
+      border-radius: 23px;
+      cursor: pointer;
+      padding: 7px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+    }
+
+    .fourthSection {
+
+      margin-top: 15%;
+    }
+
+    .fourthSection h3 {
+
+      text-decoration: underline;
+      font-size: 40px;
+
+    }
+
+    .fourthSection button {
+
+      border-radius: 23px;
+      font-size: 20px;
+      padding: 15px;
+      margin-top: 150px;
+      margin-left: -240px;
+      background: rgb(209, 190, 190);
+      cursor: pointer;
+    }
+
+    .resume {
+
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer1 {
+
+      display: flex;
+      justify-content: center;
+      margin-top: 8%;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+      text-decoration: underline;
+      margin: 10%;
+    }
+
+    .contact_info {
+
+      display: flex;
+      justify-content: space-around;
+      font-size: 20px;
+      align-items: center;
+      color: rgb(0, 0, 255);
+      background-color: rgb(135, 216, 22);
+      margin-top: 156px;
+      margin-bottom: 50px;
+      min-height: 20vh;
+    }
+
+    .copyright {
+
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="\Portfolio\Mylogo.png" alt="logo" width="150px" />
+
+      <div class="left">Saksham's Portfolio</div>
+      <div class="right"></div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- "ABOUT"  SECTION  -->
+    <section class="firstSection">
+      <div class="leftSection">
+        Greetings!! . My name is Saksham Verma and I am a Virtual Intern at
+        <b><b>CodSoft.</b></b><br /><br />I Hail from Paschim Vihar, West Delhi, where i did my
+        schooling from Shah International School. I am currently pursuing
+        BTech in Computer Science from Roorkee Institute Of Technology,
+        Roorkee.<br /><br />
+        I have built this Portfolio Website and learned a lot of concepts
+        about HTML and CSS like: Flexbox, Margins, Paddings, Section Tag, Div
+        Tag etc.
+      </div>
+
+      <div class="rightSection">
+        <big>
+          <h1><u>About Me:</u></h1>
+        </big>
+
+        <br />
+
+        <ul>
+          <li>
+            2nd year BTech CSE Student at Roorkee Institute of Technology.
+          </li>
+          <br />
+          <li>Passionate about Programming and Web Development.</li>
+          <br />
+
+          <li>2 Years of Experience in Python and SQL.</li>
+          <br /><br />
+
+          <h2>Some of my Interests are:</h2>
+
+          <li>Love to listen to Podcasts</li>
+          <br /><br />
+          <li>Love to study and know more about Spirituality.</li>
+          <br /><br />
+          <li>Attracted to the Uniform of Armed Forces.</li>
+          <br /><br />
+          <li>Love to Read Thriller Novels.</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr />
+    <br />
+    <!--" WORK EXPERIENCE" SECTION  -->
+    <section class="secondSection">
+      <u>
+        <h1>Work Experience</h1>
+      </u><br /><br /><br />
+
+      <div class="box">
+        <div class="vertical">
+          <img src="python_logo.png" class="image-top" alt="Python Logo" />
+
+          <div class="vertical-title">Python Programmer</div>
+
+          <div class="vertical-desc">
+            <p>
+              I have been coding in Python since class 11th and am familiar
+              with the basics of this Language.
+              <br />
+              I have the knowledge of basic concepts like OOPS, Dictionaries,
+              Lists, Recursion, Sorting etc.
+            </p>
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img src="sql_logo.png" alt="SQL_LOGO" class="image-top" />
+
+          <div class="vertical-title">Structured Query Language</div>
+
+          <div class="vertical-desc">
+            <p>
+              Again, when it comes to SQL, it was also included in my 11th and
+              12th class syllabus. I have experience in creating, updating,
+              deleting, merging and unmerging tables in SQL. I have also made
+              basi projects like Hospital Mangement System(basic one) ,
+              Calculator, Time Table(basic one) using Python-SQL Connectivity.
+            </p>
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img src="html5_logo.png" alt="" class="image-top" />
+          <div class="vertical-title">HTML Programmer</div>
+
+          <div class="vertical-desc">
+            <p>
+              I have learned HTML recently and am applying it in various projects like making an online Calculator<br>
+              , a Portfolio site like this and a landing page as well. I will apply my HTML skills in other projects as
+              well.
+            </p>
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img src="c_logo.png" alt="" class="image-top" />
+
+          <div class="vertical-title">C Language Programmer</div>
+
+          <div class="vertical-desc">
+            <p>
+              I learned C language in my 1st Semester as a College Fresher. It helped me to gain basic knowledge about
+              Programming<br>
+              concepts like Loops, Conditional Statements and Datatypes.<br> I have learned C++ as well with the help of
+              knowledge of C, which <br>
+              is obviously the Mother of All Programming Languages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- "PROJECTS" SECTION -->
+
+    <section class="thirdSection">
+      <div class="projects">
+        <big><u>
+            <h1>Projects</h1>
+          </u></big>
+
+        <div class="calculator">
+          <h3>1.Calculator Project</h3>
+
+          <p style="font-size: 22px">Brief Description: The calculator project was one of the Level 1 tasks in my
+            Virtual Internship at CodSoft.
+            <br>
+
+            This Project helped me to apply basic HTML and CSS skills and helped me to gain knowledge about how
+            JavaScript is applied in Websites as well.
+          </p>
+
+          <img class="calc_image" src="calc_image.png " alt="CALCULATOR PROJECT IMAGE" width=850px>
+
+
+
+          <button class="calc_button">Visit Calculator Site</button>
+
+        </div>
+
+        <div class="LandingPage">
+
+          <h3>2. Landing Page Project</h3>
+
+          <p style="font-size: 22px">Brief Description: I have made a very basic Landing Page Website using the basic
+            knowledge of HTML and
+            CSS. This was also one of the projects mentioned in Level 1 in my CodSoft Virtual Internship.</p>
+
+          <br><br>
+          <p style="font-size: 22px">In this Project I have 3 Sections, first being the Introductory Section of my page.
+            In first section I have mentioned the basic information about my Gym and any basic knowledge that a newcomer
+            would want to know is mentioned in the First Section. It contains two Div Elements , one has the text
+            written in it, the other contains the image of the Site.<br>
+
+            In the Second section I have mentioned the Membership Offers/ Plans that we have at our Gym.
+            Various plans have various features and advantages that one can access at a particular cost.
+          </p>
+          <br><br>
+          <p style="font-size: 22px">In the Third Section I have used Table tags and created a table for the Customer.
+          </p>
+          <br><br>
+          <button class="LandingButton">Visit
+            the Project Site Here</button>
+          <img src="landing_pageImage.png" alt="LANDING PAGE PROJECT IMAGE" width="850px"
+            style="margin-top: 7%; border-radius: 23px;">
+          <img src="landing_pageImage2.png" alt="LANDING PAGE PROJECT IMAGE" width=850px class="landing_image">
+        </div>
+    </section>
+
+    <!-- "RESUME " SECTION -->
+
+    <section class="fourthSection">
+
+      <div class="resume">
+        <h3>My Resume</h3>
+
+        <button><a href="Portfolio\resume.pdf"></a>Click Here to Download</button>
+
+      </div>
+    </section>
+
+    <!-- FOOTER STARTS HERE -->
+    <footer>
+
+      <section class="fifthSection">
+
+        <div class="contact">
+          <h1>Contact Me Here</h1>
+        </div>
+
+        <div class="contact_info">
+
+          <h2>Send Mail Here:<br><a href="mailto:sakshamverma1000@gmail.com" target="_blank">Mail</a> </h2>
+
+
+          <h2>Contact Number: 8178818207</h2>
+
+          <h2>Linkedin:<br><a href="www.linkedin.com/in/saksham-verma-1b7484213" taget="_blank">Linkedin Profile</a>
+          </h2>
+
+
+        </div>
+
+        <div class="copyright">
+          <p>© 2023 Paradigm Fitness . All rights reserved. The content, design, and images on this website are
+            protected by copyright laws. No part of this website may be reproduced, distributed, or transmitted in any
+            form or by any means without the prior written permission of Paradigm Fitness."</p>
+        </div>
+      </section>
+    </footer>
+  </main>
+</body>
+
+</html>
